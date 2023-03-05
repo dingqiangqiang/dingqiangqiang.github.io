@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常用模块梳理 | 前端乐园</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?14e79dc2a90c097db7bb4a52ae0ec30d";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+    <meta name="description" content="personal blog">
+    <meta name="keywords" content="基于 vuepress 搭建个人博客，强强">
+    <meta name="author" content="强强">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.a01156e8.css" as="style"><link rel="preload" href="/assets/js/app.e54ca641.js" as="script"><link rel="preload" href="/assets/js/3.edc8b499.js" as="script"><link rel="preload" href="/assets/js/1.5c0b611b.js" as="script"><link rel="preload" href="/assets/js/28.fb023885.js" as="script"><link rel="preload" href="/assets/js/9.378c45b6.js" as="script"><link rel="prefetch" href="/assets/js/10.7a46f706.js"><link rel="prefetch" href="/assets/js/11.9e2d3377.js"><link rel="prefetch" href="/assets/js/12.2c0523f3.js"><link rel="prefetch" href="/assets/js/13.cc933c8d.js"><link rel="prefetch" href="/assets/js/14.575a526c.js"><link rel="prefetch" href="/assets/js/15.223a24af.js"><link rel="prefetch" href="/assets/js/16.f7407721.js"><link rel="prefetch" href="/assets/js/17.81f537b6.js"><link rel="prefetch" href="/assets/js/18.89a4075b.js"><link rel="prefetch" href="/assets/js/19.adf5e3ac.js"><link rel="prefetch" href="/assets/js/20.a605eb9a.js"><link rel="prefetch" href="/assets/js/21.b5fddf09.js"><link rel="prefetch" href="/assets/js/22.f5e8d0e5.js"><link rel="prefetch" href="/assets/js/23.21314c48.js"><link rel="prefetch" href="/assets/js/24.207a2350.js"><link rel="prefetch" href="/assets/js/25.599f3d28.js"><link rel="prefetch" href="/assets/js/26.2c1ef34c.js"><link rel="prefetch" href="/assets/js/27.860ca498.js"><link rel="prefetch" href="/assets/js/29.b9807513.js"><link rel="prefetch" href="/assets/js/30.9cd467b9.js"><link rel="prefetch" href="/assets/js/31.652c1a15.js"><link rel="prefetch" href="/assets/js/32.71536169.js"><link rel="prefetch" href="/assets/js/33.4103f4ab.js"><link rel="prefetch" href="/assets/js/34.3132edad.js"><link rel="prefetch" href="/assets/js/35.9aa18881.js"><link rel="prefetch" href="/assets/js/36.fe036855.js"><link rel="prefetch" href="/assets/js/37.e824187a.js"><link rel="prefetch" href="/assets/js/38.5fa82b1a.js"><link rel="prefetch" href="/assets/js/39.4553c0c0.js"><link rel="prefetch" href="/assets/js/4.6ed51192.js"><link rel="prefetch" href="/assets/js/40.f6327d3b.js"><link rel="prefetch" href="/assets/js/41.9e31ffe4.js"><link rel="prefetch" href="/assets/js/42.405c3b85.js"><link rel="prefetch" href="/assets/js/43.c6920f7d.js"><link rel="prefetch" href="/assets/js/44.93d5a524.js"><link rel="prefetch" href="/assets/js/45.b9a1972b.js"><link rel="prefetch" href="/assets/js/46.8b7fd7f5.js"><link rel="prefetch" href="/assets/js/47.3888f46c.js"><link rel="prefetch" href="/assets/js/48.fdce41b2.js"><link rel="prefetch" href="/assets/js/49.74ebc7e4.js"><link rel="prefetch" href="/assets/js/5.2d31334f.js"><link rel="prefetch" href="/assets/js/50.c131806d.js"><link rel="prefetch" href="/assets/js/51.33b238da.js"><link rel="prefetch" href="/assets/js/52.f9041ed6.js"><link rel="prefetch" href="/assets/js/53.be66c21e.js"><link rel="prefetch" href="/assets/js/54.367f1b66.js"><link rel="prefetch" href="/assets/js/55.8bd26f92.js"><link rel="prefetch" href="/assets/js/56.05538796.js"><link rel="prefetch" href="/assets/js/57.932f38cd.js"><link rel="prefetch" href="/assets/js/58.60171ff3.js"><link rel="prefetch" href="/assets/js/59.bf28478f.js"><link rel="prefetch" href="/assets/js/6.dcb03793.js"><link rel="prefetch" href="/assets/js/60.7eec1adc.js"><link rel="prefetch" href="/assets/js/61.6ec2a8e2.js"><link rel="prefetch" href="/assets/js/62.9973a2f2.js"><link rel="prefetch" href="/assets/js/63.b2cd0f78.js"><link rel="prefetch" href="/assets/js/64.f147633c.js"><link rel="prefetch" href="/assets/js/65.19f73980.js"><link rel="prefetch" href="/assets/js/66.b5d94450.js"><link rel="prefetch" href="/assets/js/67.7cb7ef24.js"><link rel="prefetch" href="/assets/js/68.bd3b8af6.js"><link rel="prefetch" href="/assets/js/69.b25449dd.js"><link rel="prefetch" href="/assets/js/7.008ee473.js"><link rel="prefetch" href="/assets/js/70.6b5411ac.js"><link rel="prefetch" href="/assets/js/71.0b28b2ea.js"><link rel="prefetch" href="/assets/js/72.9aa1f08f.js"><link rel="prefetch" href="/assets/js/73.58d9577b.js"><link rel="prefetch" href="/assets/js/74.51a1e62b.js"><link rel="prefetch" href="/assets/js/75.3d287efd.js"><link rel="prefetch" href="/assets/js/76.5ece6872.js"><link rel="prefetch" href="/assets/js/77.d2df304e.js"><link rel="prefetch" href="/assets/js/78.411e097f.js"><link rel="prefetch" href="/assets/js/79.317e1e7d.js"><link rel="prefetch" href="/assets/js/8.034900f4.js"><link rel="prefetch" href="/assets/js/80.e47d15a5.js"><link rel="prefetch" href="/assets/js/81.04f7ae2d.js"><link rel="prefetch" href="/assets/js/82.e984e28e.js"><link rel="prefetch" href="/assets/js/83.d278babf.js"><link rel="prefetch" href="/assets/js/84.124c3276.js"><link rel="prefetch" href="/assets/js/85.10040863.js"><link rel="prefetch" href="/assets/js/86.03c03d90.js"><link rel="prefetch" href="/assets/js/87.f918bc0c.js"><link rel="prefetch" href="/assets/js/88.7b6af393.js"><link rel="prefetch" href="/assets/js/89.3f0f69cf.js"><link rel="prefetch" href="/assets/js/90.1011276e.js"><link rel="prefetch" href="/assets/js/91.efcec6bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a01156e8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-01e1a3d6><div data-v-01e1a3d6><div class="password-shadow password-wrapper-out" style="display:none;" data-v-6b44dbf6 data-v-01e1a3d6 data-v-01e1a3d6><h3 class="title" data-v-6b44dbf6>前端乐园</h3> <p class="description" data-v-6b44dbf6>personal blog</p> <label id="box" class="inputBox" data-v-6b44dbf6><input type="password" value="" data-v-6b44dbf6> <span data-v-6b44dbf6>Konck! Knock!</span> <button data-v-6b44dbf6>OK</button></label> <div class="footer" data-v-6b44dbf6><span data-v-6b44dbf6><i class="iconfont reco-theme" data-v-6b44dbf6></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6b44dbf6>vuePress-theme-reco</a></span> <span data-v-6b44dbf6><i class="iconfont reco-copyright" data-v-6b44dbf6></i> <a data-v-6b44dbf6><!---->
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-01e1a3d6><header class="navbar" data-v-01e1a3d6><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端乐园</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      源码揭秘
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/axios/01.html" class="nav-link"><i class="undefined"></i>
+  Axios.js 技术揭秘
+</a></li><li class="dropdown-item"><!----> <a href="/vue/guide/" class="nav-link"><i class="undefined"></i>
+  Vue.js 技术揭秘
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      前端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>单元测试</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/jest/guide/" class="nav-link"><i class="undefined"></i>
+  Jest
+</a></li><li class="dropdown-subitem"><a href="/vitest/guide/" class="nav-link"><i class="undefined"></i>
+  Vitest
+</a></li></ul></li><li class="dropdown-item"><h4>脚手架</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/01/" class="nav-link"><i class="undefined"></i>
+  Vue-cli
+</a></li></ul></li><li class="dropdown-item"><h4>构建工具</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/rollup/guide/" class="nav-link"><i class="undefined"></i>
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/webpack/guide/" class="nav-link"><i class="undefined"></i>
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/guide/" class="nav-link"><i class="undefined"></i>
+  Vite
+</a></li></ul></li><li class="dropdown-item"><h4>静态站点</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/01.html" class="nav-link"><i class="undefined"></i>
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>网络</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/guide/" class="nav-link"><i class="undefined"></i>
+  Http协议
+</a></li></ul></li><li class="dropdown-item"><h4>进阶</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/algorithm/guide/" class="nav-link"><i class="undefined"></i>
+  数据结构与算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      全栈基石
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/api/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><h4>框架</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/express/guide/" class="nav-link"><i class="undefined"></i>
+  Express
+</a></li><li class="dropdown-subitem"><a href="/koa/guide/" class="nav-link"><i class="undefined"></i>
+  Koa
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/develop/summary/" class="nav-link"><i class="undefined"></i>
+  踩坑总结
+</a></div><div class="nav-item"><a href="/interview/guide/" class="nav-link"><i class="undefined"></i>
+  面试指南
+</a></div><div class="nav-item"><a href="/releases/" class="nav-link"><i class="undefined"></i>
+  更新日志
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/1398234521812008" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <a href="https://github.com/dingqiangqiang/vuepress-site" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-01e1a3d6></div> <aside class="sidebar" data-v-01e1a3d6><div class="personal-info-wrapper" data-v-7b7316c7 data-v-01e1a3d6><!----> <!----> <div class="num" data-v-7b7316c7><div data-v-7b7316c7><h3 data-v-7b7316c7>79</h3> <h6 data-v-7b7316c7>Articles</h6></div> <div data-v-7b7316c7><h3 data-v-7b7316c7>6</h3> <h6 data-v-7b7316c7>Tags</h6></div></div> <ul class="social-links" data-v-7b7316c7></ul> <hr data-v-7b7316c7></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="undefined"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      源码揭秘
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/axios/01.html" class="nav-link"><i class="undefined"></i>
+  Axios.js 技术揭秘
+</a></li><li class="dropdown-item"><!----> <a href="/vue/guide/" class="nav-link"><i class="undefined"></i>
+  Vue.js 技术揭秘
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      前端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>单元测试</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/jest/guide/" class="nav-link"><i class="undefined"></i>
+  Jest
+</a></li><li class="dropdown-subitem"><a href="/vitest/guide/" class="nav-link"><i class="undefined"></i>
+  Vitest
+</a></li></ul></li><li class="dropdown-item"><h4>脚手架</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue-cli/01/" class="nav-link"><i class="undefined"></i>
+  Vue-cli
+</a></li></ul></li><li class="dropdown-item"><h4>构建工具</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/rollup/guide/" class="nav-link"><i class="undefined"></i>
+  Rollup
+</a></li><li class="dropdown-subitem"><a href="/webpack/guide/" class="nav-link"><i class="undefined"></i>
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/guide/" class="nav-link"><i class="undefined"></i>
+  Vite
+</a></li></ul></li><li class="dropdown-item"><h4>静态站点</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress/01.html" class="nav-link"><i class="undefined"></i>
+  VuePress
+</a></li></ul></li><li class="dropdown-item"><h4>网络</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/guide/" class="nav-link"><i class="undefined"></i>
+  Http协议
+</a></li></ul></li><li class="dropdown-item"><h4>进阶</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/algorithm/guide/" class="nav-link"><i class="undefined"></i>
+  数据结构与算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      全栈基石
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/api/" class="nav-link"><i class="undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><h4>框架</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/express/guide/" class="nav-link"><i class="undefined"></i>
+  Express
+</a></li><li class="dropdown-subitem"><a href="/koa/guide/" class="nav-link"><i class="undefined"></i>
+  Koa
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/develop/summary/" class="nav-link"><i class="undefined"></i>
+  踩坑总结
+</a></div><div class="nav-item"><a href="/interview/guide/" class="nav-link"><i class="undefined"></i>
+  面试指南
+</a></div><div class="nav-item"><a href="/releases/" class="nav-link"><i class="undefined"></i>
+  更新日志
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/1398234521812008" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <a href="https://github.com/dingqiangqiang/vuepress-site" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Node</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/node/api.html" aria-current="page" class="active sidebar-link">常用模块</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6b44dbf6 data-v-01e1a3d6><h3 class="title" data-v-6b44dbf6>常用模块梳理</h3> <!----> <label id="box" class="inputBox" data-v-6b44dbf6><input type="password" value="" data-v-6b44dbf6> <span data-v-6b44dbf6>Konck! Knock!</span> <button data-v-6b44dbf6>OK</button></label> <div class="footer" data-v-6b44dbf6><span data-v-6b44dbf6><i class="iconfont reco-theme" data-v-6b44dbf6></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6b44dbf6>vuePress-theme-reco</a></span> <span data-v-6b44dbf6><i class="iconfont reco-copyright" data-v-6b44dbf6></i> <a data-v-6b44dbf6><!---->
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-01e1a3d6><div data-v-01e1a3d6><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">常用模块梳理</h1> <div data-v-d70b6e8c><!----> <i class="iconfont reco-date" data-v-d70b6e8c><span data-v-d70b6e8c>2/21/2023</span></i> <!----> <i class="tags iconfont reco-tag" data-v-d70b6e8c><span class="tag-item" data-v-d70b6e8c>node</span></i></div></div> <div class="theme-reco-content content__default"><p></p><div class="table-of-contents"><ul><li><a href="#path-模块">path 模块</a></li><li><a href="#fs-模块">fs 模块</a></li><li><a href="#process-cwd">process.cwd</a></li><li><a href="#dirname">__dirname</a></li><li><a href="#filename">__filename</a></li><li><a href="#模块化">模块化</a></li></ul></div><p></p> <div class="custom-block tip"><p class="title"></p><p>以下演示的 <code>API</code> 均以该图片中的项目目录为准。</p></div><img src="/assets/node/path.png"> <h2 id="path-模块"><a href="#path-模块" class="header-anchor">#</a> path 模块</h2> <p><code>path</code> 模块提供了一些用于处理文件路径的小工具：</p> <ul><li>1、<code>path.normalize(url)</code>：</li></ul> <p>规范化路径。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// /vue2-webpack-demo/src/assets/logo.png</span>
+path<span class="token punctuation">.</span><span class="token function">normalize</span><span class="token punctuation">(</span><span class="token string">'/vue2-webpack-demo/src////assets/////logo.png/tab/..'</span><span class="token punctuation">)</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>2、<code>path.join([path1][, path2][, ...])</code>：</li></ul> <p>用于连接路径。该方法的主要用途在于，会正确使用当前系统的路径分隔符。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'/foo/bar'</span><span class="token punctuation">,</span> <span class="token string">'./baz'</span><span class="token punctuation">)</span> <span class="token comment">// /foo/bar/baz</span>
+path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'/foo/bar'</span><span class="token punctuation">,</span> <span class="token string">'/baz'</span><span class="token punctuation">)</span> <span class="token comment">// /foo/bar/baz</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>3、<code>path.resolve([from ...], to)</code>：</li></ul> <p>将 <code>to</code> 参数解析为绝对路径，给定的路径的序列是从右往左被处理的，后面每个路径被依次解析，直到构造完成一个绝对路径。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'/foo/bar'</span><span class="token punctuation">,</span> <span class="token string">'./baz'</span><span class="token punctuation">)</span> <span class="token comment">// /foo/bar/baz</span>
+path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'/foo/bar'</span><span class="token punctuation">,</span> <span class="token string">'/baz'</span><span class="token punctuation">)</span> <span class="token comment">// /baz</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>4、<code>path.isAbsolute(path)</code>：</li></ul> <p>判断参数 <code>path</code> 是否是绝对路径。。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">isAbsolute</span><span class="token punctuation">(</span><span class="token string">'/foo/bar'</span><span class="token punctuation">)</span> <span class="token comment">// true </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>5、<code>path.relative(from, to)</code>：</li></ul> <p>用于将绝对路径转为相对路径，返回从 <code>from</code> 到 <code>to</code> 的相对路径（基于当前工作目录）。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">relative</span><span class="token punctuation">(</span><span class="token string">'/a/b/test/aaa'</span><span class="token punctuation">,</span> <span class="token string">'/a/b/impl/bbb'</span><span class="token punctuation">)</span> <span class="token comment">// ../../impl/bbb</span>
+path<span class="token punctuation">.</span><span class="token function">relative</span><span class="token punctuation">(</span><span class="token string">'../'</span><span class="token punctuation">,</span> process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// vue2-webpack-demo</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>6、<code>path.dirname(p)</code>：</li></ul> <p>返回路径中代表文件夹的部分。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">dirname</span><span class="token punctuation">(</span><span class="token string">'/foo/bar/baz.js'</span><span class="token punctuation">)</span> <span class="token comment">// /foo/bar</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>7、<code>path.basename(p[, ext])</code>：</li></ul> <p>返回路径中的最后一部分。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">basename</span><span class="token punctuation">(</span><span class="token string">'/foo/bar.js'</span><span class="token punctuation">)</span> <span class="token comment">// bar.js</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>8、<code>path.extname(p)</code>：</li></ul> <p>返回路径中文件的后缀名，即路径中最后一个'.'之后的部分。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>path<span class="token punctuation">.</span><span class="token function">extname</span><span class="token punctuation">(</span><span class="token string">'/foo/bar.js'</span><span class="token punctuation">)</span> <span class="token comment">// .js</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="fs-模块"><a href="#fs-模块" class="header-anchor">#</a> fs 模块</h2> <ul><li>1、文件读取</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;fs&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 异步读取</span>
+fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 同步读取</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>2、文件写入</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// fs.writeFile(file, data[, options], callback)</span>
+<span class="token comment">/**
+  file - 文件名或文件描述符。
+  data - 要写入文件的数据，可以是 String(字符串) 或 Buffer(缓冲) 对象。
+  options - 该参数是一个对象，包含 {encoding, mode, flag}。默认编码为 utf8, 模式为 0666 ， flag 为 'w'
+  callback - 回调函数，回调函数只包含错误信息参数(err)，在写入失败时返回。
+ */</span>
+
+fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">,</span> <span class="token string">'我是通 过fs.writeFile 写入文件的内容'</span><span class="token punctuation">,</span>  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>3、获取文件信息：</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// fs.stat(path, callback) </span>
+<span class="token comment">/* 
+path - 文件路径
+callback - 回调函数，带有两个参数如：(err, stats), stats 是 fs.Stats 对象。
+*/</span>
+
+fs<span class="token punctuation">.</span><span class="token function">stat</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> stats</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span><span class="token function">isFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 是否是文件</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span><span class="token function">isDirectory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 是否是目录</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>4、读取目录：</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// fs.readdir(path, callback)</span>
+<span class="token comment">/* 
+path - 文件路径。
+callback - 回调函数，回调函数带有两个参数err, files。err 为错误信息，files 为目录下的文件数组列表。
+*/</span>
+
+fs<span class="token punctuation">.</span><span class="token function">readdir</span><span class="token punctuation">(</span><span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> files</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>files<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="process-cwd"><a href="#process-cwd" class="header-anchor">#</a> process.cwd</h2> <p>指定 <code>node</code> 进程的当前工作目录(保证文件在不同的目录下执行时，路径始终不变)</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// /Users/didi/Desktop/project/vue2-webpack-demo</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="dirname"><a href="#dirname" class="header-anchor">#</a> __dirname</h2> <p>动态获取当前文件模块所属目录的绝对路径</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>__dirname <span class="token comment">// /Users/didi/Desktop/project/vue2-webpack-demo</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="filename"><a href="#filename" class="header-anchor">#</a> __filename</h2> <p>当前正在执行的脚本的文件名，输出文件所在位置的绝对路径。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 执行 node ./path.js</span>
+__filename <span class="token comment">// /Users/didi/Desktop/project/vue2-webpack-demo/path.js</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="模块化"><a href="#模块化" class="header-anchor">#</a> 模块化</h2> <p>按需导入:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// utils.js</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">minus</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">minus</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">// meta.js</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>
+  add<span class="token punctuation">,</span>
+  minus
+<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./utils'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>默认导入:</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// utils.js</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">add</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">// meta.js</span>
+<span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./utils'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div></section> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dingqiangqiang/vuepress-site/edit/master/docs/node/api.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-7b9ab47c data-v-01e1a3d6></ul></div></div></div><div class="global-ui"><!----><!----><!----><!----><div></div></div></div>
+    <script src="/assets/js/app.e54ca641.js" defer></script><script src="/assets/js/3.edc8b499.js" defer></script><script src="/assets/js/1.5c0b611b.js" defer></script><script src="/assets/js/28.fb023885.js" defer></script><script src="/assets/js/9.378c45b6.js" defer></script>
+  </body>
+</html>
